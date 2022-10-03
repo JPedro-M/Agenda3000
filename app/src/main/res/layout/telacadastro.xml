@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryC"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="Agenda 3000"
+            android:textColor="@color/black"
+            android:textSize="45dp" />
+
+        <TextView
+            android:id="@+id/txtSubTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitulo"
+            android:background="@color/secondaryC"
+            android:paddingLeft="10dp"
+
+            android:text="Cadastrar:"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/txtQuest1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSubTitulo"
+            android:paddingLeft="10dp"
+            android:text="Nome:"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/etQuest1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuest1"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="textPersonName"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/txtQuest2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etQuest1"
+            android:paddingLeft="10dp"
+            android:text="Telefone:"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/etQuest2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuest2"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="phone"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/txtQuest3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etQuest2"
+            android:paddingLeft="10dp"
+            android:text="Endereço:"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/etQuest3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuest3"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:id="@+id/llCad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etQuest3">
+
+            <Button
+                android:id="@+id/btCadastrarCad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Cadastrar"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btLimparCad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:text="Limpar"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btFecharCad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llCad"
+            android:layout_centerHorizontal="true"
+            android:text="Fechar"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+</ScrollView>

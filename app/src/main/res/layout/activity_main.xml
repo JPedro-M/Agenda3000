@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryC"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:text="Agenda 3000"
+        android:textColor="@color/black"
+        android:textSize="45dp" />
+
+    <TextView
+        android:id="@+id/txtSubTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitulo"
+        android:background="@color/secondaryC"
+        android:text="Menu:"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btCad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSubTitulo"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/secondaryC"
+        android:paddingVertical="50dp"
+        android:text="Cadastrar usuários"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btCad"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/secondaryC"
+        android:paddingVertical="50dp"
+        android:text="Listar usuários"
+        android:textSize="25dp" />
+    </RelativeLayout>
+</ScrollView>
